@@ -25,21 +25,50 @@
     flex-direction:column;
 }
 
-#Container *{
-    border: 1px solid grey;
+html{
+    display:flex;
+    justify-content:center;
+    background-color:black;
 }
 
 #Container{
     flex-direction:row;
     min-height:100vh;
-    width:100vw;
+    width:70vw;
     justify-content:center;
     background-color:black;
 }
 
 #leftSide{
+    align-items:center;
     background-image: url("Images/tropical-leaf.avif");
     flex: 1;
+}
+
+#banner{
+    margin-top:50%;
+    height:100px;
+    justify-content:center;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#banner-logo{
+    width:100px;
+}
+
+#banner-text, #mention{
+    color:white;
+}
+
+#banner-text{
+    font-size: 5rem;
+    font-family: "Alex Brush";
+}
+
+#mention{
+    margin-top:auto;
+    margin-bottom:10px;
+    
 }
 
 #rightSide{
