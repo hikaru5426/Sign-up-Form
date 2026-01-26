@@ -1,0 +1,48 @@
+@font-face{
+    font-family:"Alex Brush";
+    src: url("Font/AlexBrush-Regular.woff2") format("woff2"),
+        url("Font/AlexBrush-Regular.woff") format("woff");
+        font-weight:normal;
+        font-style:normal;
+        font-display:swap;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    border:border-box;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.flex{
+    display:flex;
+}
+
+.column{
+    flex-direction:column;
+}
+
+#Container *{
+    border: 1px solid grey;
+}
+
+#Container{
+    flex-direction:row;
+    min-height:100vh;
+    width:100vw;
+    justify-content:center;
+    background-color:black;
+}
+
+#leftSide{
+    background-image: url("Images/tropical-leaf.avif");
+    flex: 1;
+}
+
+#rightSide{
+    flex: 2;
+    background-color:rgb(250, 250, 250);
+}

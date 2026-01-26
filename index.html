@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign-up Form</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="javascript.js"></script>
-    </head>
 
-    <body>
-        <p>Hello World</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div id="Container" class="flex">
+
+        <div id="leftSide" class="flex column">
+            <div id="banner" class="flex">
+                <img id="banner-logo" src="Images/odin-lined.png"></img>
+                <span id="banner-text">ODIN</span>
+            </div>
+            <div>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                    href="https://unsplash.com/">Unsplash</a></div>
+        </div>
+
+
+        <div id="rightSide" class="flex column">
+
+            <div id="introduction">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.<br>
+                    Sign up <span class="italic">now</span> to get started.</p>
+
+                <p>You know you <span class="italic">want</span> to</p>
+            </div>
+
+            <form action="" method="post" id="form" class="flex">
+                <fieldset>
+
+                    <legend>Let's do this!</legend>
+
+                    <div class="flex form-row">
+                        <div class="flex label-input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="flex label-input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                    </div>
+
+                    <div class="flex form-row">
+                        <div class="flex label-input">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="flex label-input">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="text" id="phone-number" name="phone-number">
+                        </div>
+                    </div>
+
+                    <div class="flex form-row">
+                        <div class="flex label-input">
+                            <label for="password">password</label>
+                            <input type="text" id="password" name="password">
+                        </div>
+                        <div class="flex label-input">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="text" id="confirm-password" name="confirm-password">
+                        </div>
+                    </div>
+                    <button type="submit" id="btnCreateAccount">Create Account</button>
+                </fieldset>
+            </form>
+
+
+
+
+
+            <div class="bottomPart">Already have an account ? <a href="">Log in</a></div>
+        </div>
+    </div>
+
+</body>
+
 </html>
