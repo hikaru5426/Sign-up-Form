@@ -7,6 +7,16 @@
         font-display:swap;
 }
 
+@font-face {
+    font-family: 'Exo';
+    src: url('Font/Exo-Black.woff2') format('woff2'),
+        url('Font/Exo-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 *{
     padding:0px;
     margin:0px;
@@ -19,10 +29,6 @@
 
 a{
     color:inherit;
-}
-
-label{
-    color:rgb(60, 60, 60);
 }
 
 .flex{
@@ -91,6 +97,7 @@ html{
     flex:1;
     width: 100%;
     /* border:10px solid gray; */
+    font-family:sans-serif;
 }
 
 #rightSide *{
@@ -109,6 +116,7 @@ html{
     font-size:1.5rem;
     justify-content:flex-end;
     padding-bottom:5vh;
+    flex-basis:30%;
 }
 
 #introduction > .spacer{
@@ -118,6 +126,7 @@ html{
 #form{
     background-color: rgb(255, 255, 255);
     /* border:10px solid green; */
+    flex-basis:40%;
 }
 
 #form > fieldset{
@@ -139,6 +148,41 @@ html{
 
 .form-row{
     display:flex;
-    gap:10vw;
+    gap:3vw;
+}
+
+label{
+    color:rgb(100, 100, 100);
+    font-family:"Exo";
+    position:relative;
+}
+
+input{
+    border:1px solid rgba(100, 100, 100, 0.2);
+    border-radius:4px;
+}
+
+input:focus{
+    outline:2px solid blue;
+}
+
+input:is([type="password"], [type="email"]):valid{
+    border-color:green;
+}
+
+input:is([type="password"], [type="email"]):invalid{
+    border-color:red;
+}
+
+label:is([for="email"], [for="password"], [for="confirm-password"])::after{
+    content:"*";
+    font-size:1.5rem;
+    position:absolute;
+    color:red;
+    top:-4px;
+}
+
+#bottomPart{
+    flex-basis:30%;
 }
 
